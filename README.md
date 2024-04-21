@@ -6,10 +6,10 @@ RestControlers(Контроллеры):
     Документация в файле Swagger_Controllers.pdf
 ****
 Services(Сервисы):
-    ***
+    ****
     1.CurrencyService:
         1.public List<Currency> sendDailyRequest() - каждый день в полночь автоматический отправляет запрос на биржу для получения курса валют(последнее закрытие);
-    ***
+    ****
     2.LimitService:
         1.public Limit updateLimit(Limit oldLimit) - обновляет существующий лимит(но остаток лимита не обновляется). В сущности Limit обязателен поля:
             currentLimit - новый лимит,
