@@ -26,7 +26,7 @@ public class CurrencyServiceImpl implements CurrencyService {
     private final RestTemplate restTemplate = new RestTemplate();
 
 
-
+//  Получение данных о курсах валют каждый день в полночь
     @Scheduled(cron = "0 0 0 * * *")
     @Override
     public List<Currency> sendDailyRequest(){

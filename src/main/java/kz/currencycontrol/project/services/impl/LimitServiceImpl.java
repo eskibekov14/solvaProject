@@ -1,4 +1,6 @@
 package kz.currencycontrol.project.services.impl;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import kz.currencycontrol.project.models.Limit;
 import kz.currencycontrol.project.repositories.LimitRepository;
 import kz.currencycontrol.project.services.LimitService;
@@ -24,6 +26,7 @@ public class LimitServiceImpl implements LimitService {
         return limitRepository.save(updateLimit);
     }
 
+//    Ежемесячное обновление лимитов
     @Scheduled(cron = "0 0 0 1 * ?")
     @Transactional
     @Override
